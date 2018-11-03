@@ -16,14 +16,14 @@ body {
 	height: 100%;
 	display: grid;
 	grid-template-columns: 1fr 10fr 1fr;
-	grid-template-rows: repeat(12, 1fr);
+	grid-template-rows: repeat(16, 1fr);
 	grid-gap: 1em;
 	grid-auto-rows: minmax(500px, auto);
 	justify-self: stretch;
 	align-self: stretch;
 }
 
-.grid > div {
+.grid > section {
 	background-color: #99EA39;
 	padding: 1em;
 }
@@ -46,12 +46,12 @@ body {
 
 /* NAVIGATION BAR */
 
-.grid .custom-nav {
+.grid nav {
 	background-color: #99EA39;
 	padding: 0;
 }
 
-.custom-nav {
+nav {
 	grid-column: 1/4;
 	grid-row: 1;
 	display: grid;
@@ -62,13 +62,13 @@ body {
 	background-image: linear-gradient(#99EA39, #85CB33);
 }
 
-.custom-nav a {
+nav a {
 	display: grid;
 	text-decoration: none;
 	color: black;
 }
 
-.custom-nav a:hover {
+nav a:hover {
 	
 }
 
@@ -77,7 +77,7 @@ body {
 	transition: 0.5s;
 }
 
-.custom-nav .custom-nav-text {
+nav .custom-nav-text {
 	align-self: center;
 	font-weight: bold;
 }
@@ -96,45 +96,54 @@ body {
 	
 }
 
-.box1 {
+#home {
 	grid-column: 2/3;
 	grid-row: 2/4;
 	display: grid;
 }
 
-.box1-text {
+#home-text {
 	text-align: center;
 	justify-self: center;
 	align-self: center;
 }
 
-.box2 {
+#form {
 	grid-column: 2/3;
-	grid-row: 4/10;
+	grid-row: 4/8;
 }
 
-.box2-text {
+#form-text {
 	
 }
 
-.box3 {
+#contact {
 	grid-column: 2/3;
-	grid-row: 10/12;
+	grid-row: 8/12;
 }
 
-.box3-text {
+#contact-text {
+	
+}
+
+#aboutus {
+	grid-column: 2/3;
+	grid-row: 12/16;
+}
+
+#aboutus-text {
 	
 }
 
 /* FOOTER */
 
-.custom-footer {
+#custom-footer {
 	grid-column: 1/4;
-	grid-row: 12;
+	grid-row: 16;
 	display: grid;
 }
 
-.custom-footer-text {
+#custom-footer-text {
 	text-align: center;
 	justify-self: center;
 	align-self: center;
