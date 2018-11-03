@@ -23,7 +23,7 @@ body {
 	align-self: stretch;
 }
 
-.grid > section {
+.grid > section, footer{
 	background-color: #99EA39;
 	padding: 1em;
 }
