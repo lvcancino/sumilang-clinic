@@ -8,6 +8,7 @@ body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
+	font-family: 'Roboto', sans-serif;
 }
 
 /* GRID LAYOUT */
@@ -23,7 +24,7 @@ body {
 	align-self: stretch;
 }
 
-.grid > section, footer{
+.grid > section, footer {
 	background-color: #99EA39;
 	padding: 1em;
 }
@@ -66,10 +67,18 @@ nav a {
 	display: grid;
 	text-decoration: none;
 	color: black;
+	font-size: 1.25em;
 }
 
 nav a:hover {
-	
+	text-decoration: none;
+	color: black;
+}
+
+.custom-nav-button {
+	border-width: 1px;
+	border-color: white;
+	border-left-style: solid;
 }
 
 .custom-nav-button:hover {
@@ -87,7 +96,7 @@ nav .custom-nav-text {
 }
 
 .website-title-text {
-	font-size: 125%;
+	font-size: 200%;
 }
 
 /* WEBSITE CONTENTS */
